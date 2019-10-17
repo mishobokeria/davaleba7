@@ -41,6 +41,10 @@ body{
 	margin-right: 45px;
 	text-transform: uppercase;
 }
+.nav-a:hover{
+	color: red;
+	opacity: 0.5;
+}
 .image{
 	height: 100%;
 	top: 2%;
@@ -52,5 +56,60 @@ body{
 	background:#fff;
 	left: -2px;
 	bottom: -2px;
+	transition:all 0.3s ease-in 0.5s;
+	
 }
+.white-box:hover{
+	background: aqua;
+}
+.white-box:hover .green-box{
+	background-color: yellow;
+}
+.green-box{
+	width: 300px;
+	height: 300px;
+	background: #006837;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	transition:all 0.3s ease-in 0.5s;
+
+}
+.box-text{
+	font-size: 39px;
+	color: #FFFF00;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%)rotate(45deg);
+	white-space: nowrap;
+	text-transform: uppercase;
+	transition:all 0.4s ease-in 0.5s;
+	
+}
+.white-box:hover .box-text{
+	color: #C1272D;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%) rotateX(0deg);
+}
+.read-more{
+	font-size: 14px;
+	color: #39B54A;
+	text-transform: uppercase;
+	right: 15px;
+	bottom: 0;
+	transition:all 0.3s ease-in 0.5s;
+}
+.white-box:hover .read-more{
+	color: #C1272D;
+	right: 30px;
+}
+.created-by{
+	.font-size: 14px;
+	color: #FCEE21;
+	bottom: 10px;
+	right: 15px;
+	text-transform: uppercase;
+}
+
 /*end body*/
